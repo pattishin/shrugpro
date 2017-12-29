@@ -180,6 +180,8 @@ module.exports = {
                     {
                       loader: require.resolve('css-loader'),
                       options: {
+                        // Enabling CSS Modules https://github.com/css-modules/css-modules
+                        modules: true,
                         importLoaders: 1,
                         minimize: true,
                         sourceMap: shouldUseSourceMap,

@@ -163,7 +163,10 @@ module.exports = {
               {
                 loader: require.resolve('css-loader'),
                 options: {
+                  // Enabling CSS Modules https://github.com/css-modules/css-modules
+                  modules: true,
                   importLoaders: 1,
+                  localIdentName: '[name]__[local]___[hash:base64:5]'
                 },
               },
               {
